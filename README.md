@@ -16,7 +16,7 @@ A ready-to-use authentication module to kickstart **any MERN project**. This rep
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone
 cd login-signup-mern
 ```
 
