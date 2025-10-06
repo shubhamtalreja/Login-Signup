@@ -1,0 +1,128 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 20px;
+  background: linear-gradient(180deg, rgba(7,10,15,0.02), rgba(7,10,15,0.0));
+}
+
+.auth-form {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid rgba(15,23,36,0.06);
+}
+
+.auth-form h2 {
+  text-align: left;
+  margin: 0 0 6px 0;
+  color: #0f1724;
+  font-size: 1.35rem;
+}
+
+.auth-form p.subtitle {
+  margin: 0 0 14px 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 14px;
+  border: 1px solid rgba(15,23,36,0.12);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #06b6d4;
+  box-shadow: 0 6px 18px rgba(6,182,212,0.08);
+}
+
+.submit-btn {
+  background: linear-gradient(90deg,#06b6d4,#0ea5a4);
+  color: #042023;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.03rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  margin-top: 6px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(6,182,212,0.12);
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #0f1724;
+  font-size: 0.95rem;
+}
+
+/* Inline layout for wider screens */
+@media (min-width: 768px) {
+  .form-row {
+    display: flex;
+    gap: 12px;
+  }
+
+  .form-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+  }
+}
+
+/* Small screens */
+@media (max-width: 420px) {
+  .auth-form {
+    padding: 18px;
+    border-radius: 8px;
+  }
+  .navbar-logo img {
+    height: 30px;
+  }
+}
+
+/* Small inline action (Send OTP / Verify) */
+.inline-action {
+  background: transparent;
+  border: none;
+  color: #06b6d4;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.inline-action[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
